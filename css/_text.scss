@@ -1,0 +1,37 @@
+body {
+	@include readingFontFam;
+	color:$readingColor;
+}
+
+a, a:visited, a:active {
+	color:lighten(blue, 12%);
+}
+
+h1, h2, h3, h4, h5 {
+    @include titleFontFam;
+    line-height: 2;
+    color:$titleColor;
+}
+
+p {
+    line-height:1.5;
+    margin-bottom:1.6em;
+}
+
+// styles specific to the article area
+
+article { 
+	
+	ol, ul {
+		@include fontSize(1.4);
+		line-height:1.5;
+		margin:0 0 1.6em 1.5em;
+	}
+	
+	blockquote {
+		border-left:4px solid #ccc;
+		padding-left:2em;
+		font-style:italic;
+	}
+}
+

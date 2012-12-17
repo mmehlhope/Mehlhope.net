@@ -1,0 +1,21 @@
+// layout changes
+header {
+	width:100%;
+	background:$titleColor;
+
+	h1 {
+		// margin-left:5%;
+		color:#fff;
+		float:left;
+	}
+	.menuToggle {
+		float:right;
+		display:none;
+	}
+}
+
+footer {
+	width:90%;
+	padding:1% 5%;
+	background:#ccc;
+}

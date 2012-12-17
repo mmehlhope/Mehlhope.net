@@ -1,0 +1,37 @@
+// vars
+
+$titleColor: #111;
+$readingColor: #575757;
+
+// mixins
+
+@mixin titleFontFam {
+	font-family: Helvetica, Arial, sans-serif;
+}
+@mixin readingFontFam {
+	font-family: Verdana, Arial, sans-serif;
+} 
+@mixin fontSize($x) {
+	font-size:$x+em;
+}
+@mixin roundedCorners($x) {
+	-webkit-border-radius: $x;
+	-moz-border-radius: $x;
+	border-radius: $x;
+}
+@mixin roundedLeftCorners ($x) {
+	-webkit-border-top-left-radius: $x;
+	-webkit-border-bottom-left-radius: $x;
+	-moz-border-radius-topleft: $x;
+	-moz-border-radius-bottomleft: $x;
+	border-top-left-radius: $x;
+	border-bottom-left-radius: $x;
+}
+@mixin roundedRightCorners($x) {
+	-webkit-border-top-right-radius: $x;
+	-webkit-border-bottom-right-radius: $x;
+	-moz-border-radius-topright: $x;
+	-moz-border-radius-bottomright: $x;
+	border-top-right-radius: $x;
+	border-bottom-right-radius: $x;
+}

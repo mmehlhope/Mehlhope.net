@@ -1,0 +1,99 @@
+@media all and (max-width:40em) {
+	// text changes
+	h1 { @include fontSize(2.3) }
+	h2 { @include fontSize(1.9) }
+	h3 { @include fontSize(1.8) }
+	h4 { @include fontSize(1.5) }
+	p { 
+		@include fontSize(1.4);
+		&.lede {
+			@include fontSize(1.7);
+		}
+	}
+	header {
+		
+		.menuToggle {
+			@include fontSize(2);
+			color:#fff;
+			display:block;
+			text-transform: uppercase;
+			background:#333;
+			padding:0.65em 1em 0.65em 1em;
+		}
+
+		nav {
+			width:100%;
+			clear:left;
+
+			.navItem {
+				@include fontSize(1.4);
+				display:block;
+				padding:1.2em 5%;
+				background:#333;
+				color:#fff;
+				text-decoration: none;
+				border-bottom:1px solid $titleColor;
+				font-style:italic;
+			}
+		}
+	}
+
+	#content-wrapper {
+		width:100%;
+		padding-top:2%;
+
+		article {
+			border-bottom:1px solid $readingColor;
+			width:90%;
+			padding:0 5%;
+			margin-bottom:1%;
+			-webkit-tap-highlight-color: lightBlue;
+		}
+		.summary {
+			padding-right:20%;
+		}
+
+		.fullArticle {
+			display:none;
+		}
+		aside {
+			width:90%;
+			padding:2% 5% 0;
+
+			.heading {
+				margin-left:-6%;
+				margin-right:-6%;
+				padding-left:5%;
+				background:$titleColor;
+				color:#fff;
+			}
+			.profilePicture {
+				float:right;
+				width:27%;
+				height:auto;
+				margin-left:1em;
+				margin-bottom:1em;
+				@include roundedCorners(50%);
+			}
+			.asideList {
+				list-style-type:none;
+				margin-left:-6%;
+				margin-right:-6%;
+				
+				.sidebarItem {
+					@include fontSize(1.4);
+					display:block;
+					padding:1.2em 5%;
+					// color:#fff;
+					text-decoration: none;
+					border-bottom:1px solid $readingColor;
+
+					&:last-child {
+						border-bottom:none;
+					}
+
+				}
+			}
+		}
+	}
+}

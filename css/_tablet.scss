@@ -36,7 +36,7 @@
 				&:last-child {
 					border-right:none;
 				}
-				&:hover {
+				&:hover, &:active {
 					background:#fff;
 					color:$titleColor;
 				}

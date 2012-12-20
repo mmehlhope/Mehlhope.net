@@ -213,11 +213,14 @@ header {
 #content-wrapper {
   background: #fff;
   width: 98%;
-  margin: 0 auto 1em; }
+  margin: 0 auto 1em;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px; }
 
 .main {
-  width: 61%;
-  padding: 2% 2.5% 2% 4%;
+  width: 55%;
+  padding: 2% 3.5% 2% 5%;
   float: left;
   border-right: 1px solid #ccc; }
   .main form {
@@ -265,7 +268,7 @@ header {
 aside {
   width: 28%;
   float: right;
-  padding: 2% 2% 0; }
+  padding: 2% 4% 0; }
   aside .profilePicture {
     float: right;
     width: 27%;
@@ -300,8 +303,17 @@ aside {
 footer {
   clear: both;
   width: 90%;
-  padding: 1% 5%;
-  background: #111; }
+  padding: 2% 5%;
+  background: #111;
+  -webkit-border-bottom-right-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px; }
+  footer p {
+    margin: 0;
+    color: #fff; }
 
 @media all and (max-width:40em) {
   h1 {

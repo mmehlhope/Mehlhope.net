@@ -37,3 +37,12 @@ $readingColor: #575757;
 	border-top-right-radius: $x;
 	border-bottom-right-radius: $x;
 }
+
+@mixin roundedBottomCorners($x) {
+	-webkit-border-bottom-right-radius: $x;
+	-webkit-border-bottom-left-radius: $x;
+	-moz-border-radius-bottomright: $x;
+	-moz-border-radius-bottomleft: $x;
+	border-bottom-right-radius: $x;
+	border-bottom-left-radius: $x;
+}

@@ -1,10 +1,14 @@
 // layout changes
+
+body {
+	background:#323C33;
+}
+
 header {
 	width:100%;
-	background:$titleColor;
+	margin:1em 0;
 
 	h1 {
-		// margin-left:5%;
 		color:#fff;
 		float:left;
 	}
@@ -12,10 +16,128 @@ header {
 		float:right;
 		display:none;
 	}
+	nav {
+		.navitems {
+			&.active {
+				background:#fff;
+			}
+		}
+	}
+}
+#content-wrapper {
+	background:#fff;
+	width:98%;
+	margin:0 auto 1em;
+}
+.main {
+		width:61%;
+		padding:2% 2.5% 2% 4%;
+		float:left;
+		border-right:1px solid #ccc;
+	form {
+		margin:1em 0 3em;
+
+		label {
+			@include fontSize(1.4);
+			display:block;
+			margin:0.5em 0;
+			color:$titleColor;
+			font-weight:700;
+		}
+		input[type="submit"] {
+			@include fontSize(1.4);
+			background:lightgray;
+			border:0;
+			padding:1em;
+			margin:0.5em 0;
+			text-shadow:0 1px 1px #fff;
+			@include roundedCorners(3px);
+		}
+		input[type="text"] {
+			@include fontSize(1.5);
+			color:$readingColor;
+			display:block;
+			width:50%;
+			margin:1em 0;
+			padding:0.75em;
+			border:1px solid $readingColor;
+
+		}
+		textarea {
+			@include fontSize(1.5);
+			color:$readingColor;
+			display:block;
+			width:98%;
+			padding:1%;
+			border:1px solid $readingColor;
+		}
+	}
+
+	article {
+		border-bottom:1px solid #ccc;
+		width:100%;
+		margin-bottom:2em;
+
+		&:last-child {
+			border-bottom:none;
+		}
+		
+		.summary {
+			display:none;
+		}
+	}
+}
+aside {
+
+	width: 28%;
+	float: right;
+	padding: 2% 2% 0;
+
+	.profilePicture {
+		float:right;
+		width:27%;
+		height:auto;
+		margin-left:1em;
+		margin-bottom:1em;
+		@include roundedCorners(50%);
+	}
+
+	.asideList {
+		list-style-type:none;
+		
+		.sidebarItem {
+			@include fontSize(1.4);
+			display:block;
+			padding:1.2em 5%;
+			text-decoration: none;
+			border-bottom:1px solid #ccc;
+
+			&:last-child {
+				border-bottom:none;
+			}
+
+		}
+	}
+}
+.social {
+	padding:2em 0;
+	list-style-type:none;
+
+	li {
+		float:left;
+		width:33%;
+		text-align:center;
+
+		img {
+			width:40%;
+			height:auto;
+		}
+	}
 }
 
 footer {
+	clear:both;
 	width:90%;
 	padding:1% 5%;
-	background:#ccc;
+	background:#111;
 }

@@ -1,7 +1,7 @@
 @media all and (min-width:40em) and (max-width:80em) {
 	// text changes
 	h1 { @include fontSize(2.8) }
-	h2 { @include fontSize(2.2) }
+	h2 { @include fontSize(3.2) }
 	h3 { @include fontSize(1.8) }
 	h4 { @include fontSize(1.5) }
 	p { 
@@ -24,6 +24,7 @@
 
 			.navItem {
 				@include fontSize(1.4);
+				display:block;
 				float:left;
 				padding:1.5em 1.2em;
 				color:#fff;
@@ -39,56 +40,6 @@
 				&:hover, &:active {
 					background:#fff;
 					color:$titleColor;
-				}
-			}
-		}
-	}
-
-	#content-wrapper {
-		width:90%;
-		padding:2% 5% 0;
-
-		.main {
-			width:65%;
-			margin-right:5%;
-			float:left;
-		}
-		article {
-			border-bottom:1px solid #ccc;
-			width:100%;
-			margin-bottom:2em;
-
-			&:last-child {
-				border-bottom:none;
-			}
-		}
-		.summary {
-			display:none;
-		}
-		aside {
-			width:30%;
-			float:right;
-
-			.profilePicture {
-				width:70%;
-				margin-left:15%;
-				height:auto;
-				@include roundedCorners(50%);
-			}
-			.asideList {
-				list-style-type:none;
-				
-				.sidebarItem {
-					@include fontSize(1.4);
-					display:block;
-					padding:1.2em 5%;
-					text-decoration: none;
-					border-bottom:1px solid #ccc;
-
-					&:last-child {
-						border-bottom:none;
-					}
-
 				}
 			}
 		}

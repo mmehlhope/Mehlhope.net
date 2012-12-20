@@ -4,13 +4,17 @@ body {
 }
 
 a, a:visited, a:active {
-	color:lighten(blue, 12%);
+	color:#00A56A;
 }
 
 h1, h2, h3, h4, h5 {
     @include titleFontFam;
-    line-height: 2;
+    line-height: 1.2;
+    margin:0.5em 0;
     color:$titleColor;
+}
+h1 {
+	font-weight:300;
 }
 
 p {
@@ -23,7 +27,7 @@ p {
 article { 
 	
 	ol, ul {
-		@include fontSize(1.4);
+		@include fontSize(1.6);
 		line-height:1.5;
 		margin:0 0 1.6em 1.5em;
 	}

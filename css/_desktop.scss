@@ -1,17 +1,18 @@
 @media all and (min-width:80em) {
 	// text changes
 	h1 { @include fontSize(2.8) }
-	h2 { @include fontSize(2.2) }
+	h2 { @include fontSize(3.2) }
 	h3 { @include fontSize(1.8) }
 	h4 { @include fontSize(1.5) }
 	p { 
-		@include fontSize(1.4);
+		@include fontSize(1.6);
 		&.lede {
 			@include fontSize(1.7);
 		}
 	}
 
 	header {
+		width:100%;
 
 		#header-wrapper {
 			max-width:120em;
@@ -32,9 +33,9 @@
 				text-decoration: none;
 				border-right:1px solid $readingColor;
 
-				&:first-child {
-					border-left:1px solid $readingColor;
-				}
+				// &:first-child {
+				// 	border-left:1px solid $readingColor;
+				// }
 				&:hover, &:active {
 					background:#fff;
 					color:$titleColor;
@@ -44,63 +45,6 @@
 	}
 
 	#content-wrapper {
-		width:90%;
-		margin:0 auto;
-		max-width:120em;
-		padding:2% 5% 0;
-
-		.main {
-			width:65%;
-			margin-right:5%;
-			float:left;
-		}
-		article {
-			border-bottom:1px solid #ccc;
-			width:100%;
-			margin-bottom:2em;
-
-			&:last-child {
-				border-bottom:none;
-			}
-		}
-		.summary {
-			display:none;
-		}
-		aside {
-			width:30%;
-			float:right;
-
-			.profilePicture {
-				width:70%;
-				margin-left:15%;
-				height:auto;
-				@include roundedCorners(50%);
-			}
-			.asideList {
-				list-style-type:none;
-				
-				.sidebarItem {
-					@include fontSize(1.4);
-					display:block;
-					padding:1.2em 5%;
-					text-decoration: none;
-					border-bottom:1px solid #ccc;
-
-					&:last-child {
-						border-bottom:none;
-					}
-
-				}
-			}
-		}
-	}
-
-	#footer-wrapper {
-		max-width:120em;
-		margin:0 auto;2
+		max-width:130em;
 	}
 }
-
-
-		// margin:0 auto;
-		// max-width:120em;

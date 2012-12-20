@@ -1,12 +1,14 @@
 // vars
 
-$titleColor: #111;
+$titleColor: #333;
 $readingColor: #575757;
 
 // mixins
 
 @mixin titleFontFam {
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: 700;
 }
 @mixin readingFontFam {
 	font-family: Verdana, Arial, sans-serif;

@@ -9,7 +9,8 @@
 	<title>Matt Mehlhope</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width">
-	<link rel="stylesheet" href="/css/mehlhope.css">
+    <link rel="stylesheet" href="/css/mehlhope.css">
+    <link rel="stylesheet" href="/css/single.css">
     <script src="/js/html5shiv.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400' rel='stylesheet' type='text/css'>
 </head>
@@ -17,9 +18,9 @@
     <header class="clearfix">
         <div id="header-wrapper">
             <h1 class="title">Matt Mehlhope</h1>
-            <!-- <div class="menuToggle">Menu</div> -->
+            <div class="menuToggle">Menu</div>
             <nav class="clearfix" role="nav">
-                <!-- <ul class="navItems">
+                <ul class="navItems">
                     <a class="navItem" href="#">
                         <li>Web Development</li>
                     </a>
@@ -29,7 +30,7 @@
                     <a class="navItem" href="#">
                         <li>Games</li>
                     </a>
-                </ul> -->
+                </ul>
             </nav>
         </div>
     </header>
@@ -40,9 +41,6 @@
             <article>
                 <h2>Responsible Web Design</h2>
     
-                <section class="summary">
-                    <p>This is a very short description about the article for small devices</p>
-                </section>
                 <section class="fullArticle">
                     <p>As web designers and developers, we carry the heavy burden of ensuring that content is delivered to an incredibly heterogenius audience – internet-enabled devices. These devices come in different shapes, sizes, and capacities. Regardless of their capabilities each device platform deserves the same level of respect, something that we have not historically given each equally. While responsive and adaptive web design have become buzz words in the industry, they are simply emblematic of our need to design responsibly — for all users and devices — rather than for the capable few.</p>
                     <p>Many have said that following certain web design methodologies is indeed responsible web design, but Responsible Web Design is deserving of its own definition and properties.</p>
@@ -63,35 +61,21 @@
                         <p>Note: Given this insight, I am in the process of completely re-coding my own site to adhere to these standards. It is a fantastic opportunity to explore the technical aspect, but also provide a simple example.</p>
                     </blockquote>
                 </section>
+                <h3>Leave a reply</h3>
+                <form>
+                    <label>Name</label>
+                    <input type="text">
+                    <label>Email</label>
+                    <input type="text">
+                    <label>Website</label>
+                    <input type="text">
+                    <label>Comment</label>
+                    <textarea rows="10"></textarea>
+                    <input type="submit" value="Submit Comment">
+                </form>
+
             </article>
-            <article>
-                <h2>This is the article title</h2>
-                
-                <section class="summary">
-                    <p>This is a very short description about the article for small devices</p>
-                </section>
-                <section class="fullArticle">
-                    <p class="lede">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
-                    <h3>This is an H3</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
-                </section>
-            </article>
-            <article>
-                <h2>This is the article title</h2>
-                
-                <section class="summary">
-                    <p>This is a very short description about the article for small devices</p>
-                </section>
-                <section class="fullArticle">
-                    <p class="lede">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
-                    <h3>This is an H3</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
-                </section>
-            </article>
+
         </section>
             
         <aside role="aside">
@@ -122,16 +106,13 @@
                 </li>
             </ul>
         </aside>
-
-        <footer class="wrapper">
-            <div id="footer-wrapper">
-                <p>Theme and content hand crafted by Matt Mehlhope. &copy; 2010-2013 &mdash; <a href="#header-wrapper">Back to Top</a></p>
-            </div>
-        </footer>
-
     </div>
 
-    
+    <footer class="wrapper">
+        <div id="footer-wrapper">
+            <p>Theme and content hand crafted by Matt Mehlhope. &copy; 2010-2013 &mdash; <a href="#header-wrapper">Back to Top</a></p>
+        </div>
+    </footer>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>

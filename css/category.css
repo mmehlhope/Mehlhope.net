@@ -1,1 +1,18 @@
-#content-wrapper h2{margin-bottom:0.5em}@media all and (max-width:40em){#content-wrapper h2{margin-left:5%}}#content-wrapper article:first-of-type{border-top:1px solid #ccc;padding-top:1em}@media all and (max-width:40em){#content-wrapper article:first-of-type{border-top:1px solid #575757}}#content-wrapper .date{font-size:1.3em;color:#575757;font-style:italic;margin-bottom:1em}#content-wrapper .summary{display:block}
+#content-wrapper h2 {
+  margin-bottom: 0.5em; }
+  @media all and (max-width: 40em) {
+    #content-wrapper h2 {
+      margin-left: 5%; } }
+#content-wrapper article:first-of-type {
+  border-top: 1px solid #ccc;
+  padding-top: 1em; }
+  @media all and (max-width: 40em) {
+    #content-wrapper article:first-of-type {
+      border-top: 1px solid #575757; } }
+#content-wrapper .date {
+  font-size: 1.3em;
+  color: #575757;
+  font-style: italic;
+  margin-bottom: 1em; }
+#content-wrapper .summary {
+  display: block; }

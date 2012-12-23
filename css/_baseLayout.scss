@@ -21,19 +21,13 @@ header {
 nav {
 	.navItems {
 		float:right;
-		margin-top:0.5em;
-		
+		margin-top:1em;
+
 		li {
 			float:right;
-			margin:0 1em;
-			text-align:center;
 
-			img {
-				width:40%;
-				height:auto;
-				filter: url(/images/filters.svg#grayscale); /* Firefox 3.5+ */
-				filter: gray; /* IE6-9 */
-				-webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
+			.btn {
+				margin-bottom:0;
 			}
 		}
 
@@ -55,8 +49,10 @@ nav {
 		float:left;
 		border-right:1px solid #ccc;
 	form {
-		margin:1em 0 3em;
-
+		margin:2em 0 3em;
+		h3 {
+			margin-bottom:2em;
+		}
 		label {
 			@include fontSize(1.4);
 			display:block;
@@ -66,14 +62,10 @@ nav {
 		}
 		input[type="submit"] {
 			@include fontSize(1.4);
-			background:lightgray;
 			border:0;
-			padding:1em;
-			margin:0.5em 0;
-			text-shadow:0 1px 1px #fff;
-			@include roundedCorners(3px);
+			margin-top:1.6em;
 		}
-		input[type="text"] {
+		input[type="text"], input[type="email"] {
 			@include fontSize(1.5);
 			color:$readingColor;
 			display:block;
@@ -81,6 +73,7 @@ nav {
 			margin:1em 0;
 			padding:0.75em;
 			border:1px solid $readingColor;
+			@include roundedCorners(4px);
 
 		}
 		textarea {
@@ -90,6 +83,7 @@ nav {
 			width:98%;
 			padding:1%;
 			border:1px solid $readingColor;
+			@include roundedCorners(4px);
 		}
 	}
 

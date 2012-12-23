@@ -2,6 +2,7 @@
 
 $titleColor: #333;
 $readingColor: #575757;
+$linkColor: #DD574C;
 
 // mixins
 
@@ -10,17 +11,21 @@ $readingColor: #575757;
 	font-style: normal;
 	font-weight: 700;
 }
+
 @mixin readingFontFam {
 	font-family: Verdana, Arial, sans-serif;
 } 
+
 @mixin fontSize($x) {
 	font-size:$x+em;
 }
+
 @mixin roundedCorners($x) {
 	-webkit-border-radius: $x;
 	-moz-border-radius: $x;
 	border-radius: $x;
 }
+
 @mixin roundedLeftCorners ($x) {
 	-webkit-border-top-left-radius: $x;
 	-webkit-border-bottom-left-radius: $x;

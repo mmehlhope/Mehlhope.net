@@ -16,32 +16,5 @@
 			width:90%;
 			padding:0 0 0 5%;
 		}
-		h1 {
-			float:left;
-		}
-		nav {
-			float:right;
-
-			.navItem {
-				@include fontSize(1.4);
-				display:block;
-				float:left;
-				padding:1.5em 1.2em;
-				color:#fff;
-				text-decoration: none;
-				border-right:1px solid $readingColor;
-
-				&:first-child {
-					border-left:1px solid $readingColor;
-				}
-				&:last-child {
-					border-right:none;
-				}
-				&:hover, &:active {
-					background:#fff;
-					color:$titleColor;
-				}
-			}
-		}
 	}
 }

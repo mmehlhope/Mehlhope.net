@@ -169,7 +169,7 @@ body {
   color: #575757; }
 
 a, a:visited, a:active {
-  color: #00A56A; }
+  color: #DD574C; }
 
 h1, h2, h3, h4, h5 {
   font-family: "Open Sans", sans-serif;
@@ -196,7 +196,7 @@ article blockquote {
   font-style: italic; }
 
 body {
-  background: #323C33; }
+  background: #363D40; }
 
 header {
   width: 100%;
@@ -207,7 +207,24 @@ header {
   header .menuToggle {
     float: right;
     display: none; }
-  header nav .navitems.active {
+
+nav .navItems {
+  float: right;
+  margin-top: 0.5em; }
+  nav .navItems li {
+    float: right;
+    margin: 0 1em;
+    text-align: center; }
+    nav .navItems li img {
+      width: 40%;
+      height: auto;
+      filter: url(/images/filters.svg#grayscale);
+      /* Firefox 3.5+ */
+      filter: gray;
+      /* IE6-9 */
+      -webkit-filter: grayscale(1);
+      /* Google Chrome & Safari 6+ */ }
+  nav .navItems.active {
     background: #fff; }
 
 #content-wrapper {
@@ -315,7 +332,7 @@ footer {
     margin: 0;
     color: #fff; }
 
-@media all and (max-width:40em) {
+@media all and (max-width: 40em) {
   h1 {
     font-size: 2.3em; }
 
@@ -335,26 +352,6 @@ footer {
 
   header h1 {
     margin-left: 5%; }
-  header .menuToggle {
-    font-size: 1.6em;
-    color: #fff;
-    display: block;
-    text-transform: uppercase;
-    background: #333;
-    padding: 1em 1.2em 0.85em 1.2em; }
-  header nav {
-    width: 100%;
-    clear: left; }
-    header nav .navItem {
-      font-size: 1.4em;
-      float: left;
-      width: 33.3333%;
-      padding: 1.2em 0;
-      text-align: center;
-      background: #333;
-      color: #fff;
-      text-decoration: none;
-      font-style: italic; }
 
   #content-wrapper {
     width: 96%;
@@ -403,7 +400,7 @@ footer {
           font-style: italic; }
           #content-wrapper aside .asideList .sidebarItem:last-child {
             border-bottom: none; } }
-@media all and (min-width:40em) and (max-width:80em) {
+@media all and (min-width: 40em) and (max-width: 80em) {
   h1 {
     font-size: 2.8em; }
 
@@ -423,27 +420,8 @@ footer {
 
   header #header-wrapper {
     width: 90%;
-    padding: 0 0 0 5%; }
-  header h1 {
-    float: left; }
-  header nav {
-    float: right; }
-    header nav .navItem {
-      font-size: 1.4em;
-      display: block;
-      float: left;
-      padding: 1.5em 1.2em;
-      color: #fff;
-      text-decoration: none;
-      border-right: 1px solid #575757; }
-      header nav .navItem:first-child {
-        border-left: 1px solid #575757; }
-      header nav .navItem:last-child {
-        border-right: none; }
-      header nav .navItem:hover, header nav .navItem:active {
-        background: #fff;
-        color: #333333; } }
-@media all and (min-width:80em) {
+    padding: 0 0 0 5%; } }
+@media all and (min-width: 80em) {
   h1 {
     font-size: 2.8em; }
 
@@ -468,18 +446,6 @@ footer {
       margin: 0 auto; }
     header h1 {
       float: left; }
-    header nav {
-      float: right; }
-      header nav .navItem {
-        font-size: 1.4em;
-        float: left;
-        padding: 1.5em 1.2em;
-        color: #fff;
-        text-decoration: none;
-        border-right: 1px solid #575757; }
-        header nav .navItem:hover, header nav .navItem:active {
-          background: #fff;
-          color: #333333; }
 
   #content-wrapper {
     max-width: 130em; } }

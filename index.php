@@ -17,19 +17,18 @@
     <header class="clearfix">
         <div id="header-wrapper">
             <h1 class="title">Matt Mehlhope</h1>
-            <!-- <div class="menuToggle">Menu</div> -->
             <nav class="clearfix" role="nav">
-                <!-- <ul class="navItems">
-                    <a class="navItem" href="#">
-                        <li>Web Development</li>
-                    </a>
-                    <a class="navItem" href="#">
-                        <li>Fitness</li>
-                    </a>
-                    <a class="navItem" href="#">
-                        <li>Games</li>
-                    </a>
-                </ul> -->
+                <ul class="navItems">
+                    <li>
+                        <a href="#"><img src="/images/octocat.png" alt="github"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="/images/twitter.png" alt="twitter"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="/images/linkedin.png" alt="linkedin"></a>
+                    </li>
+                </ul>
             </nav>
         </div>
     </header>

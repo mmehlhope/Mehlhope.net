@@ -1,7 +1,7 @@
 // layout changes
 
 body {
-	background:#323C33;
+	background:#363D40;
 }
 
 header {
@@ -16,14 +16,33 @@ header {
 		float:right;
 		display:none;
 	}
-	nav {
-		.navitems {
-			&.active {
-				background:#fff;
+}
+
+nav {
+	.navItems {
+		float:right;
+		margin-top:0.5em;
+		
+		li {
+			float:right;
+			margin:0 1em;
+			text-align:center;
+
+			img {
+				width:40%;
+				height:auto;
+				filter: url(/images/filters.svg#grayscale); /* Firefox 3.5+ */
+				filter: gray; /* IE6-9 */
+				-webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
 			}
+		}
+
+		&.active {
+			background:#fff;
 		}
 	}
 }
+
 #content-wrapper {
 	background:#fff;
 	width:98%;

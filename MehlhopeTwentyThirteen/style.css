@@ -1,0 +1,511 @@
+@charset "utf-8";
+/*
+Theme Name: Mehlhope 2.0
+Theme URI: http://mehlhope.net
+Description: 2013 Mehlhope.net Theme
+Author: Matt Mehlhope
+Author URI: http://mehlhope.net
+Version: 2.0
+*/
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1;
+  font-size: 62.5%; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* Proxima Nova @font-face */
+@font-face {
+  font-family: 'ProximaNovaBold';
+  src: url("fonts/proximanova-bold-webfont.eot");
+  src: url("fonts/proximanova-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/proximanova-bold-webfont.woff") format("woff"), url("fonts/proximanova-bold-webfont.ttf") format("truetype"), url("fonts/proximanova-bold-webfont.svg#ProximaNovaBold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ProximaNovaBoldItalic';
+  src: url("fonts/proximanova-boldit-webfont.eot");
+  src: url("fonts/proximanova-boldit-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/proximanova-boldit-webfont.woff") format("woff"), url("fonts/proximanova-boldit-webfont.ttf") format("truetype"), url("fonts/proximanova-boldit-webfont.svg#ProximaNovaBoldItalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ProximaNovaSemiboldItalic';
+  src: url("fonts/proximanova-sboldit-webfont.eot");
+  src: url("fonts/proximanova-sboldit-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/proximanova-sboldit-webfont.woff") format("woff"), url("fonts/proximanova-sboldit-webfont.ttf") format("truetype"), url("fonts/proximanova-sboldit-webfont.svg#ProximaNovaSemiboldItalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ProximaNovaSemibold';
+  src: url("fonts/proximanova-sbold-webfont.eot");
+  src: url("fonts/proximanova-sbold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/proximanova-sbold-webfont.woff") format("woff"), url("fonts/proximanova-sbold-webfont.ttf") format("truetype"), url("fonts/proximanova-sbold-webfont.svg#ProximaNovaSemibold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ProximaNovaRegular';
+  src: url("fonts/proximanova-reg-webfont.eot");
+  src: url("fonts/proximanova-reg-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/proximanova-reg-webfont.woff") format("woff"), url("fonts/proximanova-reg-webfont.ttf") format("truetype"), url("fonts/proximanova-reg-webfont.svg#ProximaNovaRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ProximaNovaRegularItalic';
+  src: url("fonts/proximanova-regit-webfont.eot");
+  src: url("fonts/proximanova-regit-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/proximanova-regit-webfont.woff") format("woff"), url("fonts/proximanova-regit-webfont.ttf") format("truetype"), url("fonts/proximanova-regit-webfont.svg#ProximaNovaRegularItalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ProximaNovaLight';
+  src: url("fonts/proximanova-light-webfont.eot");
+  src: url("fonts/proximanova-light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/proximanova-light-webfont.woff") format("woff"), url("fonts/proximanova-light-webfont.ttf") format("truetype"), url("fonts/proximanova-light-webfont.svg#ProximaNovaLight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ProximaNovaLightItalic';
+  src: url("fonts/proximanova-lightit-webfont.eot");
+  src: url("fonts/proximanova-lightit-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/proximanova-lightit-webfont.woff") format("woff"), url("fonts/proximanova-lightit-webfont.ttf") format("truetype"), url("fonts/proximanova-lightit-webfont.svg#ProximaNovaLightItalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ProximaNovaThin';
+  src: url("fonts/proximanova-thin-webfont.eot");
+  src: url("fonts/proximanova-thin-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/proximanova-thin-webfont.woff") format("woff"), url("fonts/proximanova-thin-webfont.ttf") format("truetype"), url("fonts/proximanova-thin-webfont.svg#ProximaNovaThin") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ProximaNovaThinItalic';
+  src: url("fonts/proximanova-thinit-webfont.eot");
+  src: url("fonts/proximanova-thinit-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/proximanova-thinit-webfont.woff") format("woff"), url("fonts/proximanova-thinit-webfont.ttf") format("truetype"), url("fonts/proximanova-thinit-webfont.svg#ProximaNovaThinItalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  font-family: Verdana, Arial, sans-serif;
+  color: #575757; }
+
+a {
+  color: #dd574c;
+  -webkit-transition: all .1s ease-in-out; }
+  a:hover {
+    color: #e57f77; }
+  a:active {
+    color: #cf3427; }
+
+h1, h2, h3, h4, h5 {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0.5em 0;
+  color: #333333; }
+
+h1 {
+  font-weight: 300; }
+
+h1 > a {
+  color: #fff;
+  text-decoration: none; }
+
+h2 > a, h3 > a {
+  text-decoration: none;
+  color: #333333; }
+
+p {
+  line-height: 1.5;
+  margin-bottom: 1.6em; }
+
+.btn, .more-link {
+  padding: 1em 2em;
+  font-size: 1.2em;
+  color: #fff !important;
+  background: #dd574c;
+  text-decoration: none;
+  text-align: center;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 1.6em; }
+  .btn:hover, .more-link:hover {
+    background: #e57f77;
+    cursor: pointer; }
+  .btn:active, .more-link:active {
+    background: #cf3427; }
+
+article ol, article ul {
+  font-size: 1.6em;
+  line-height: 1.5;
+  margin: 0 0 1.6em 1.5em; }
+article blockquote {
+  border-left: 4px solid #ccc;
+  padding-left: 2em;
+  font-style: italic; }
+
+body {
+  background: #363D40; }
+
+header {
+  width: 100%;
+  margin: 1em 0; }
+  header h1 {
+    color: #fff;
+    float: left; }
+  header .menuToggle {
+    float: right;
+    display: none; }
+
+nav .navItems {
+  float: right;
+  margin-top: 1em; }
+  nav .navItems li {
+    float: right; }
+    nav .navItems li .btn {
+      margin-bottom: 0; }
+  nav .navItems.active {
+    background: #fff; }
+
+#content-wrapper {
+  background: #fff;
+  width: 98%;
+  margin: 0 auto 1em;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px; }
+
+.main {
+  width: 55%;
+  padding: 2% 3.5% 2% 5%;
+  float: left;
+  border-right: 1px solid #ccc; }
+  .main form {
+    margin: 2em 0 3em; }
+    .main form h3 {
+      margin-bottom: 2em; }
+    .main form label {
+      font-size: 1.4em;
+      display: block;
+      margin: 0.5em 0;
+      color: #333333;
+      font-weight: 700; }
+    .main form input[type="submit"] {
+      font-size: 1.4em;
+      border: 0;
+      margin-top: 1.6em; }
+    .main form input[type="text"], .main form input[type="email"] {
+      font-size: 1.5em;
+      color: #575757;
+      display: block;
+      width: 50%;
+      margin: 1em 0;
+      padding: 0.75em;
+      border: 1px solid #575757;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px; }
+    .main form textarea {
+      font-size: 1.5em;
+      color: #575757;
+      display: block;
+      width: 98%;
+      padding: 1%;
+      border: 1px solid #575757;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px; }
+  .main article {
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    margin-bottom: 2em; }
+    .main article:last-child {
+      border-bottom: none; }
+    .main article .summary {
+      display: none; }
+  .main .post-navigation {
+    margin: 2em 0; }
+    .main .post-navigation .btn {
+      background: #ccc;
+      width: 30%; }
+
+aside {
+  width: 28%;
+  float: right;
+  padding: 2% 4% 0; }
+  aside .profilePicture {
+    float: right;
+    width: 27%;
+    height: auto;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%; }
+  aside .asideList {
+    list-style-type: none; }
+    aside .asideList .sidebarItem {
+      font-size: 1.4em;
+      display: block;
+      padding: 1.2em 5%;
+      text-decoration: none;
+      border-bottom: 1px solid #ccc; }
+      aside .asideList .sidebarItem:last-child {
+        border-bottom: none; }
+
+.social {
+  padding: 2em 0;
+  list-style-type: none; }
+  .social li {
+    float: left;
+    width: 33%;
+    text-align: center; }
+    .social li img {
+      width: 40%;
+      height: auto; }
+
+footer {
+  clear: both;
+  width: 90%;
+  padding: 2% 5%;
+  background: #111;
+  -webkit-border-bottom-right-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px; }
+  footer p {
+    margin: 0;
+    color: #fff; }
+
+@media all and (max-width: 40em) {
+  h1 {
+    font-size: 2.3em; }
+
+  h2 {
+    font-size: 1.9em; }
+
+  h3 {
+    font-size: 1.7em; }
+
+  h4 {
+    font-size: 1.5em; }
+
+  p {
+    font-size: 1.4em; }
+    p.lede {
+      font-size: 1.7em; }
+
+  article ol, article ul {
+    font-size: 1.4em; }
+
+  header h1 {
+    margin-left: 5%; }
+  header .navItems {
+    width: 45%;
+    margin-right: 5%; }
+
+  #content-wrapper {
+    width: 96%;
+    margin: 1em 2%;
+    padding-top: 2%;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px; }
+    #content-wrapper .main {
+      width: 100%;
+      padding: 0;
+      border-right: none; }
+      #content-wrapper .main form {
+        width: 90%;
+        margin: 2em 5% 3em; }
+        #content-wrapper .main form input[type="text"] {
+          width: 96%;
+          padding: 2%; }
+        #content-wrapper .main form input[type="submit"] {
+          width: 100%; }
+    #content-wrapper article {
+      border-bottom: 1px solid #ccc;
+      width: 90%;
+      padding: 0 5%;
+      margin-bottom: 1%;
+      -webkit-tap-highlight-color: lightBlue; }
+    #content-wrapper .summary {
+      display: block; }
+    #content-wrapper .fullArticle {
+      display: none; }
+    #content-wrapper .post-navigation {
+      width: 90%;
+      padding: 0 5%;
+      border-bottom: 1px solid #ccc; }
+    #content-wrapper aside {
+      clear: both;
+      float: left;
+      width: 90%;
+      padding: 2% 5% 0; }
+      #content-wrapper aside .asideList {
+        list-style-type: none;
+        margin-left: -6%;
+        margin-right: -6%; }
+        #content-wrapper aside .asideList .sidebarItem {
+          font-size: 1.4em;
+          display: block;
+          padding: 1.2em 5%;
+          background: #333;
+          color: #fff;
+          text-decoration: none;
+          border-bottom: 1px solid #333333;
+          font-style: italic; }
+          #content-wrapper aside .asideList .sidebarItem:last-child {
+            border-bottom: none; } }
+@media all and (min-width: 40em) and (max-width: 80em) {
+  h1 {
+    font-size: 2.8em; }
+
+  h2 {
+    font-size: 3.2em; }
+
+  h3 {
+    font-size: 1.8em; }
+
+  h4 {
+    font-size: 1.5em; }
+
+  p {
+    font-size: 1.4em; }
+    p.lede {
+      font-size: 1.7em; }
+
+  header #header-wrapper {
+    width: 90%;
+    padding: 0 0 0 5%; } }
+@media all and (min-width: 80em) {
+  h1 {
+    font-size: 2.8em; }
+
+  h2 {
+    font-size: 3.2em; }
+
+  h3 {
+    font-size: 1.8em; }
+
+  h4 {
+    font-size: 1.5em; }
+
+  p {
+    font-size: 1.6em; }
+    p.lede {
+      font-size: 1.7em; }
+
+  header {
+    width: 100%; }
+    header #header-wrapper {
+      max-width: 120em;
+      margin: 0 auto; }
+    header h1 {
+      float: left; }
+
+  #content-wrapper {
+    max-width: 130em; } }
+.last {
+  margin: 0 !important; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.centeredText {
+  text-align: center; }

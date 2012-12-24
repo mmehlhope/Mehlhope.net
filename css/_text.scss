@@ -24,6 +24,10 @@ h1, h2, h3, h4, h5 {
 h1 {
 	font-weight:300;
 }
+h1 > a {
+	color:#fff;
+	text-decoration:none;
+}
 h2 > a, h3 > a {
 	text-decoration:none;
 	color:$titleColor;
@@ -33,12 +37,13 @@ p {
     margin-bottom:1.6em;
 }
 
-.btn {
+.btn, .more-link {
 	padding:1em 2em;
 	@include fontSize(1.2);
 	color:#fff !important;
 	background:$linkColor;
 	text-decoration:none;
+	text-align:center;
 	@include roundedCorners(4px);
 	display:inline-block;
 	margin-bottom:1.6em;

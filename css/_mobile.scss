@@ -61,12 +61,16 @@
 		.fullArticle {
 			display:none;
 		}
+		.post-navigation {
+			width:90%;
+			padding:0 5%;
+			border-bottom:1px solid #ccc;
+		}
 		aside {
 			clear:both;
 			float:left;
 			width:90%;
 			padding:2% 5% 0;
-			border-top:1px solid #ccc;
 
 			.asideList {
 				list-style-type:none;

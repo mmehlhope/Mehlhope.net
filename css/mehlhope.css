@@ -1,4 +1,12 @@
 @charset "utf-8";
+/*
+Theme Name: Mehlhope 2.0
+Theme URI: http://mehlhope.net
+Description: 2013 Mehlhope.net Theme
+Author: Matt Mehlhope
+Author URI: http://mehlhope.net
+Version: 2.0
+*/
 /* 
 html5doctor.com Reset Stylesheet
 v1.6.1
@@ -187,6 +195,10 @@ h1, h2, h3, h4, h5 {
 h1 {
   font-weight: 300; }
 
+h1 > a {
+  color: #fff;
+  text-decoration: none; }
+
 h2 > a, h3 > a {
   text-decoration: none;
   color: #333333; }
@@ -195,21 +207,22 @@ p {
   line-height: 1.5;
   margin-bottom: 1.6em; }
 
-.btn {
+.btn, .more-link {
   padding: 1em 2em;
   font-size: 1.2em;
   color: #fff !important;
   background: #dd574c;
   text-decoration: none;
+  text-align: center;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
   display: inline-block;
   margin-bottom: 1.6em; }
-  .btn:hover {
+  .btn:hover, .more-link:hover {
     background: #e57f77;
     cursor: pointer; }
-  .btn:active {
+  .btn:active, .more-link:active {
     background: #cf3427; }
 
 article ol, article ul {
@@ -300,6 +313,11 @@ nav .navItems {
       border-bottom: none; }
     .main article .summary {
       display: none; }
+  .main .post-navigation {
+    margin: 2em 0; }
+    .main .post-navigation .btn {
+      background: #ccc;
+      width: 30%; }
 
 aside {
   width: 28%;
@@ -407,12 +425,15 @@ footer {
       display: block; }
     #content-wrapper .fullArticle {
       display: none; }
+    #content-wrapper .post-navigation {
+      width: 90%;
+      padding: 0 5%;
+      border-bottom: 1px solid #ccc; }
     #content-wrapper aside {
       clear: both;
       float: left;
       width: 90%;
-      padding: 2% 5% 0;
-      border-top: 1px solid #ccc; }
+      padding: 2% 5% 0; }
       #content-wrapper aside .asideList {
         list-style-type: none;
         margin-left: -6%;
@@ -477,3 +498,14 @@ footer {
 
   #content-wrapper {
     max-width: 130em; } }
+.last {
+  margin: 0 !important; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.centeredText {
+  text-align: center; }

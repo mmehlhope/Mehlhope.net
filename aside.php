@@ -8,13 +8,13 @@
     <h3 class="heading">Find me on the web</h3>
     <ul class="social clearfix">
         <li>
-            <a href="#"><img src="/images/octocat.png" alt="github"></a>
+            <a href="#" title="Matt Mehlhope on Github"><img src="/images/octocat.png" alt="Github"></a>
         </li>
         <li>
-             <a href="#"><img src="/images/twitter.png" alt="twitter"></a>
+            <a href="http://twitter.com/mmehlhope" title="Matt Mehlhope on Twitter"><img src="/images/twitter.png" alt="Twitter"></a>
         </li>
         <li>
-             <a href="#"><img src="/images/linkedin.png" alt="linkedin"></a>
+            <a href="http://www.linkedin.com/in/mattmehlhope" title="Matt Mehlhope on Twitter"><img src="/images/linkedin.png" alt="LinkedIn"></a>
         </li>
     </ul>
 </aside>    

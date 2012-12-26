@@ -243,19 +243,20 @@ header {
   header h1 {
     color: #fff;
     float: left; }
-  header .menuToggle {
-    float: right;
-    display: none; }
 
-nav .navItems {
-  float: right;
-  margin-top: 1em; }
-  nav .navItems li {
-    float: right; }
-    nav .navItems li .btn {
-      margin-bottom: 0; }
-  nav .navItems.active {
-    background: #fff; }
+nav {
+  float: right; }
+  nav .navItems {
+    float: right;
+    margin-top: 1em; }
+    nav .navItems li {
+      float: right; }
+      nav .navItems li .btn {
+        margin-bottom: 0; }
+      nav .navItems li .icon {
+        display: none; }
+    nav .navItems.active {
+      background: #fff; }
 
 #content-wrapper {
   background: #fff;
@@ -392,9 +393,18 @@ footer {
 
   header h1 {
     margin-left: 5%; }
+  header nav {
+    margin-right: 5%; }
   header .navItems {
     width: 45%;
     margin-right: 5%; }
+    header .navItems li .btn {
+      margin-bottom: 0;
+      padding: 0.5em 2em; }
+    header .navItems li .icon {
+      display: inline-block; }
+    header .navItems li .text {
+      display: none; }
 
   #content-wrapper {
     width: 96%;

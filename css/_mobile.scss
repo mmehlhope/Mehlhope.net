@@ -18,9 +18,25 @@
 		h1 {
 			margin-left:5%;
 		}
+		nav {
+			margin-right:5%;
+		}
 		.navItems {
 			width:45%;
 			margin-right:5%;
+
+			li {
+				.btn {
+					margin-bottom:0;
+					padding:0.5em 2em;
+				}
+				.icon {
+					display:inline-block;
+				}
+				.text {
+					display:none;
+				}
+			}
 		}
 	}
 
